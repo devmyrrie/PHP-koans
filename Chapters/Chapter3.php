@@ -18,7 +18,7 @@ class Chapter3 extends Chapter
     public function concatenation($valueOne, $valueTwo)
     {
         // CODE HERE
-
+	$valueThree = $valueOne.$valueTwo;
         // DO NOT EDIT BELOW
         return $valueThree;
     }
@@ -33,7 +33,7 @@ class Chapter3 extends Chapter
     public function substitution($valueOne)
     {
         // CODE HERE
-
+        $valueTwo = sprintf($valueOne, 'Susan');
         // DO NOT EDIT BELOW
         return $valueTwo;
     }
@@ -48,7 +48,7 @@ class Chapter3 extends Chapter
     public function replacement($valueOne)
     {
         // CODE HERE
-
+        $valueTwo = str_replace('relaxing', 'educational', $valueOne);
         // DO NOTE EDIT BELOW
         return $valueTwo;
     }
@@ -63,7 +63,7 @@ class Chapter3 extends Chapter
     public function length($valueOne)
     {
         // CODE HERE
-
+        $valueTwo = strlen($valueOne);
         // DO NOT EDIT BELOW
         return $valueTwo;
     }
@@ -78,7 +78,7 @@ class Chapter3 extends Chapter
     public function singleCharacters($valueOne)
     {
         // CODE HERE
-
+        $valueTwo = $valueOne[2];
         // DO NOT EDIT BELOW
         return $valueTwo;
     }
@@ -95,7 +95,9 @@ class Chapter3 extends Chapter
     public function substrings($valueOne)
     {
         // CODE HERE
-
+        $partOne = substr($valueOne, 0, 3);
+        $partTwo = substr($valueOne, 4, 5);
+        $partThree = substr($valueOne, -2, 2);
         // DO NOT EDIT BELOW
         return [$partOne, $partTwo, $partThree];
     }
@@ -112,7 +114,9 @@ class Chapter3 extends Chapter
     public function changingCase($valueOne)
     {
         // CODE HERE
-
+        $allLower = strtolower($valueOne);
+        $allUpper = strtoupper($valueOne);
+        $firstUpper = ucfirst($valueOne);
         // DO NOT EDIT BELOW
         return [$allLower, $allUpper, $firstUpper];
     }
@@ -129,7 +133,7 @@ class Chapter3 extends Chapter
     public function searching($valueOne)
     {
         // CODE HERE
-
+        $foundLocation = strpos($valueOne, 'mountains');
         // DO NOT EDIT BELOW
         return $foundLocation;
     }
